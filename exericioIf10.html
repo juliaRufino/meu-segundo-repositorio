@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    Valor de saldo da conta: <input id="inputSaldoConta">
+    <br>
+    <button onclick="verificarFinancas()">Verificar finanças</button>
+    <br>
+    <div id="exibirMensagem"></div>
+</body>
+</html>
+
+<script>
+    function verificarFinancas() {
+        var saldoConta = Number(inputSaldoConta.value)
+
+        if (saldoConta == 0) {
+            exibirMensagem.innerHTML = `<spam style= "color: black">Conta zerada!</spam>`
+        }
+
+        if (saldoConta < 0) {
+            exibirMensagem.innerHTML = `<spam style= "color: red">Está devendo!</spam>`
+        }
+
+        if (saldoConta > 0) {
+            exibirMensagem.innerHTML = `<spam style= "color: blue">Saldo positivo! &#128512</spam>`
+        }
+    }
+</script>
