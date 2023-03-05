@@ -17,18 +17,18 @@
 
 <script>
     function verificarFinancas() {
-        var saldoConta = Number(inputSaldoConta.value)
+        var saldo = Number(inputSaldoConta.value)
 
-        if (saldoConta == 0) {
-            exibirMensagem.innerHTML = `<spam style= "color: brown">Conta zerada!</spam>`
+        if (saldo == 0) {
+            exibirMensagem.innerHTML = `<spam style= "color: orange">Conta zerada!</spam>`
         }
 
-        if (saldoConta < 0) {
-            exibirMensagem.innerHTML = `<spam style= "color: purple">Está devendo!</spam>`
+        if (saldo < 0) {
+            exibirMensagem.innerHTML = `<spam style= "color: yellow">Está devendo!</spam>`
         }
 
-        if (saldoConta > 0) {
-            exibirMensagem.innerHTML = `<spam style= "color: green">Saldo positivo! &#128512</spam>`
+        if (saldo > 0) {
+            exibirMensagem.innerHTML = `<spam style= "color: pink">Saldo positivo! &#128512</spam>`
         }
     }
 </script>
