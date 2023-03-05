@@ -20,15 +20,15 @@
         var saldoConta = Number(inputSaldoConta.value)
 
         if (saldoConta == 0) {
-            exibirMensagem.innerHTML = `<spam style= "color: black">Conta zerada!</spam>`
+            exibirMensagem.innerHTML = `<spam style= "color: brown">Conta zerada!</spam>`
         }
 
         if (saldoConta < 0) {
-            exibirMensagem.innerHTML = `<spam style= "color: red">Está devendo!</spam>`
+            exibirMensagem.innerHTML = `<spam style= "color: purple">Está devendo!</spam>`
         }
 
         if (saldoConta > 0) {
-            exibirMensagem.innerHTML = `<spam style= "color: blue">Saldo positivo! &#128512</spam>`
+            exibirMensagem.innerHTML = `<spam style= "color: green">Saldo positivo! &#128512</spam>`
         }
     }
 </script>
